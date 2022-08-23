@@ -153,9 +153,8 @@ function getLivingCells(x, y) {
     for (let dy = -1; dy < 2; dy++) {
         for (let dx = -1; dx < 2; dx++) {
             if (dy == 0 && dx == 0) continue;
-            if (dy + y < 0 || height <= dy + y || dx + x < 0 || width <= dx + x) continue;
-
-            if (cells[dy + y][dx + x] == 1) res++;
+            
+            if (cells[(dy + y + height) % height][(dx + x + width) % width] == 1) res++;
         }
     }
 
