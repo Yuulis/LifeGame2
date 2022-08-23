@@ -7,19 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Game</title>
 
+    <link rel="stylesheet" href="style.css">
     <script src="./scripts/app.js"></script>
 </head>
 
 <body>
-    <div style="margin: 1em 0;">
-        <form>
-            <input type="button" value="Random" id="btn_random">
-            <input type="button" value="Start" id="btn_start">
-            <input type="button" value="Reset" id="btn_reset">
-        </form>
-    </div>
+    <div class="pagebody">
+        <div class="container">
+            <div class="header">
+                <h1>Life Game (JavaScript)</h1>
+            </div>
 
-    <canvas id="field" width="1521" height="641"></canvas>
+            <div class="main">
+                <div class="ui">
+                    <form>
+                        <input type="button" value="Random" id="btn_random">
+                        <input type="button" value="Start" id="btn_start">
+                        <input type="button" value="Reset" id="btn_reset">
+                    </form>
+                </div>
+
+                <div class="canvas">
+                    <canvas id="field" width="1201" height="481"></canvas>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p><small>2022 &copy;Yuulis All Rights Reserved.</small></p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
