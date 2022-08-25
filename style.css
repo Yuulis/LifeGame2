@@ -13,7 +13,6 @@
 
 /* ===== pagebody ===== */
 body {
-  width: 100%;
   background-color: #ffffff;
   text-decoration: none;
   line-height: 1.5;
@@ -35,7 +34,6 @@ div.container h1 {
 
 /* ===== header ===== */
 div.header {
-  width: 100%;
   padding: 10px;
   background-color: #ffffff;
 }
@@ -46,11 +44,13 @@ div.header h1 {
 
 /* ===== Main ===== */
 div.main {
-  width: 100%;
   margin: 0 auto;
   padding: 10px;
   background-color: #ffffff;
   color: #000000;
+}
+div.main p {
+  text-align: center;
 }
 
 /* ===== UI ===== */
@@ -70,7 +70,6 @@ div.canvas {
 
 /* ===== footer ===== */
 div.footer {
-  width: 100%;
   height: 20px;
   padding: 10px;
   clear: both;
